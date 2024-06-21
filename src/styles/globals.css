@@ -1,3 +1,32 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --color-base-100: 255 255 255;
+    --color-base-200: 237 238 240;
+    --color-base-300: 144 152 160;
+    --color-base-400: 85 94 103;
+    --color-base-500: 49 55 61;
+    --color-base-600: 29 31 32;
+
+    --color-dark-100: 244 245 246;
+    --color-dark-200: 211 213 217;
+    --color-dark-300: 178 182 189;
+    --color-dark-400: 156 161 170;
+    --color-dark-500: 75 79 88;
+    --color-dark-600: 35 37 41;
+
+    --color-primary-100: 245 248 254;
+    --color-primary-200: 217 229 252;
+    --color-primary-300: 160 191 248;
+    --color-primary-400: 121 165 246;
+    --color-primary-500: 83 139 243;
+    --color-primary-600: 38 109 240;
+  }
+}

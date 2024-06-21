@@ -1,3 +1,3 @@
 export default function HomePage() {
-  return <main>BEGIN</main>;
+  return <main className="bg-dark-200">BEGIN</main>;
 }
