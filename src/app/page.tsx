@@ -1,5 +1,5 @@
 export default function HomePage() {
-  const t = "t";
   const a = "a";
+  const t = "t";
   return <main>BEGIN</main>;
 }
