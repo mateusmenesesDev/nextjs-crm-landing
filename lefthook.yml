@@ -18,7 +18,7 @@
      eslint:
        root: './src/*'
        glob: "*.{js,ts,jsx,tsx}"
-       run: bun lint --fix {staged_files} && git add {staged_files}
+       run: npm run lint --fix {staged_files} && git add {staged_files}
      prettier:
         glob: "*.{js,ts,jsx,tsx,css,scss,json,md}"
         run: bun prettier --write {staged_files}
