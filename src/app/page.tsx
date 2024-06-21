@@ -1,8 +1,5 @@
+const t = "t";
 
 export default function HomePage() {
-  return (
-    <main>
-      BEGIN
-    </main>
-  );
+  return <main>BEGIN</main>;
 }
