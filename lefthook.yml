@@ -16,7 +16,6 @@
    parallel: true
    commands:
      eslint:
-       root: './src/*'
        glob: "*.{js,ts,jsx,tsx}"
        run: npm run lint --fix {staged_files} && git add {staged_files}
      prettier:
