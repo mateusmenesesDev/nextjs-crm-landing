@@ -17,7 +17,7 @@
    commands:
      eslint:
        glob: "*.{js,ts,jsx,tsx}"
-       run: bun eslint {staged_files}
+       run: bun lint-fix {staged_files}
      prettier:
         glob: "*.{js,ts,jsx,tsx,css,scss,json,md}"
         run: bun prettier --write {staged_files}
