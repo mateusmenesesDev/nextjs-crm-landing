@@ -10,7 +10,7 @@ export default function HomePage() {
     <main>
       <section className="mb-[1.22rem] mt-8 lg:my-20">
         <Container>
-          <Heading className="m-auto mb-4 max-w-[51rem] text-center lg:mb-8">
+          <Heading className="m-auto mb-4 text-center md:max-w-[35rem] lg:mb-8 lg:max-w-[51rem]">
             Customer relationship magic.
           </Heading>
           <p className="m-auto mb-8 max-w-[34rem] text-center">
