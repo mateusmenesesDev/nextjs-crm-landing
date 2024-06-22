@@ -18,7 +18,7 @@ const variants = ({
   cn(
     "rounded-xl px-4 text-center text-base-100 transition-colors",
     {
-      "border border-base-400 bg-base-600 hover:bg-base-500":
+      "border border-base-400 bg-base-600 hover:bg-base-400":
         variant === "filled" && color === "primary",
       "bg-primary-500 hover:bg-primary-400":
         variant === "filled" && color === "secondary",

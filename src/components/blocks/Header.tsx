@@ -17,7 +17,7 @@ export default function Header() {
             <Link
               key={i}
               href={item.href}
-              className="text-md capitalize text-base-600"
+              className="text-md capitalize text-base-600 transition-colors hover:text-base-400"
             >
               {item.label}
             </Link>
