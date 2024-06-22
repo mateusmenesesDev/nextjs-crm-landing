@@ -1,6 +1,5 @@
+import { inter } from "~/assets/fonts";
 import "~/styles/globals.css";
-
-import { GeistSans } from "geist/font/sans";
 
 export const metadata = {
   title: "Attio CRM",
@@ -14,7 +13,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={`${GeistSans.variable}`}>
+    <html lang="en" className={`${inter.variable} font-inter`}>
       <body>{children}</body>
     </html>
   );

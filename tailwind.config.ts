@@ -3,11 +3,78 @@ import { type Config } from "tailwindcss";
 export default {
   content: ["./src/**/*.tsx"],
   theme: {
+    fontSize: {
+      xs: [
+        "0.625rem",
+        {
+          lineHeight: "1rem",
+          letterSpacing: "-0.00625rem",
+        },
+      ],
+      sm: [
+        "0.75rem",
+        {
+          lineHeight: "1.125rem",
+        },
+      ],
+      base: [
+        "0.875rem",
+        {
+          lineHeight: "1.25rem",
+          letterSpacing: "-0.00625rem",
+        },
+      ],
+      md: [
+        "1rem",
+        {
+          lineHeight: "1.5rem",
+          letterSpacing: "-0.0125rem",
+        },
+      ],
+      lg: [
+        "1.125rem",
+        {
+          lineHeight: "1.625rem",
+          letterSpacing: "-0.0125rem",
+        },
+      ],
+      xl: [
+        "1.25rem",
+        {
+          lineHeight: "1.75rem",
+          letterSpacing: "-0.0125rem",
+        },
+      ],
+      "2xl": [
+        "1.375rem",
+        {
+          lineHeight: "2rem",
+          letterSpacing: "-0.01875rem",
+        },
+      ],
+    },
     extend: {
       screens: {
         "2xl": "87.5rem",
         "3xl": "100rem",
       },
+      keyframes: {
+        "accordion-down": {
+          from: { height: "0" },
+          to: { height: "var(--radix-accordion-content-height)" },
+        },
+        "accordion-up": {
+          from: { height: "var(--radix-accordion-content-height)" },
+          to: { height: "0" },
+        },
+      },
+      animation: {
+        "accordion-down": "accordion-down 0.2s ease-out",
+        "accordion-up": "accordion-up 0.2s ease-out",
+      },
+    },
+    fontFamily: {
+      inter: ["var(--font-inter)", "sans-serif"],
     },
     colors: {
       base: {
@@ -36,5 +103,5 @@ export default {
       },
     },
   },
-  plugins: [],
+  plugins: [require("tailwindcss-animate")],
 } satisfies Config;
