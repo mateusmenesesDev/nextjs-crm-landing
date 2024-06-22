@@ -12,7 +12,7 @@ export default function Hero() {
       <Heading className="m-auto mb-4 text-center md:max-w-[35rem] lg:mb-8 lg:max-w-[51rem]">
         Customer relationship magic.
       </Heading>
-      <p className="m-auto mb-8 max-w-[34rem] text-center">
+      <p className="m-auto mb-8 max-w-[34rem] text-center text-xl lg:text-2xl">
         Powerful, flexible and data-driven, Attio makes it easy to build the
         exact CRM your business needs.
       </p>

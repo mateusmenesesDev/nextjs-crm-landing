@@ -22,7 +22,7 @@ export default function Heading({
     `h${level}`,
     {
       className: cn(
-        `${gilroy.className} font-bold`,
+        `${gilroy.className} font-bold text-base-600`,
         {
           "text-[3.75rem] leading-[3.5rem] tracking-[-0.09375rem] lg:text-[5.75rem] lg:leading-[5.5rem] lg:tracking-[-0.225rem]":
             style === 1,

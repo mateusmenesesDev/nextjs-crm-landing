@@ -1,9 +1,11 @@
-import { navigationItems } from "~/constant/navigationItems";
-import AttioLogo from "../images/AttioLogo";
-import HamburguerIcon from "../images/HamburguerIcon";
-import { Sheet, SheetClose, SheetContent, SheetTrigger } from "../ui/sheet";
 import Link from "next/link";
+
+import { navigationItems } from "~/constant/navigationItems";
+
+import HamburguerIcon from "../icons/HamburguerIcon";
+import AttioLogo from "../icons/AttioLogo";
 import { LinkButton } from "../ui/Button";
+import { Sheet, SheetClose, SheetContent, SheetTrigger } from "../ui/sheet";
 
 export default function Header() {
   return (
