@@ -13,8 +13,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={`${inter.variable} font-inter`}>
-      <body>{children}</body>
+    <html lang="en">
+      <body className={`${inter.variable} font-inter text-lg lg:text-xl`}>
+        {children}
+      </body>
     </html>
   );
 }

@@ -9,13 +9,13 @@ export default function HomePage() {
           <Heading>Heading 1</Heading>
           <Heading level={2}>Heading 2</Heading>
           <Heading level={3}>Heading 3</Heading>
-          <p className="text-xs">text xs</p>
-          <p className="text-sm">text sm</p>
-          <p className="text-base">text base</p>
-          <p className="text-md">text md</p>
-          <p className="text-lg">text lg</p>
-          <p className="text-xl">text xl</p>
-          <p className="text-2xl">text 2xl</p>
+          <p>text xs</p>
+          <p>text sm</p>
+          <p>text base</p>
+          <p>text md</p>
+          <p>text lg</p>
+          <p>text xl</p>
+          <p>text 2xl</p>
         </Container>
       </section>
     </main>
