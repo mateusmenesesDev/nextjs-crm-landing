@@ -77,6 +77,9 @@ export default {
       inter: ["var(--font-inter)", "sans-serif"],
     },
     colors: {
+      black: "rgb(var(--color-black))",
+      white: "rgb(var(--color-white))",
+      transparent: "transparent",
       base: {
         "100": "rgb(var(--color-base-100) / <alpha-value>)",
         "200": "rgb(var(--color-base-200) / <alpha-value>)",

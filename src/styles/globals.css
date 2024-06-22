@@ -8,6 +8,8 @@
 
 @layer base {
   :root {
+    --color-black: 0 0 0;
+    --color-white: 255 255 255;
     --color-base-100: 255 255 255;
     --color-base-200: 237 238 240;
     --color-base-300: 144 152 160;

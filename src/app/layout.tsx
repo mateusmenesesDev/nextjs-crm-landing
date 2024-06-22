@@ -1,4 +1,6 @@
 import { inter } from "~/assets/fonts";
+import Header from "~/components/blocks/Header";
+import Container from "~/components/ui/Container";
 import "~/styles/globals.css";
 
 export const metadata = {
@@ -17,6 +19,9 @@ export default function RootLayout({
       <body
         className={`${inter.variable} bg-base-100 font-inter text-lg text-base-500 lg:text-xl`}
       >
+        <Container>
+          <Header />
+        </Container>
         {children}
       </body>
     </html>
