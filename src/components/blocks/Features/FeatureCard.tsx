@@ -12,8 +12,8 @@ export default function FeatureCard({
     <div className="h-full rounded-[1.25rem] bg-dark-100 p-1">
       <div className="flex h-full flex-col rounded-[1.25rem] bg-base-100 p-6 pr-0">
         <div className="mb-3 flex gap-[0.38rem]">
-          {<Icon />}
-          <span>{title}</span>
+          {Icon && <Icon />}
+          <h3>{title}</h3>
         </div>
         <p className="mb-6">{description}</p>
         {image && (
