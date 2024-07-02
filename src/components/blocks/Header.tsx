@@ -13,15 +13,18 @@ export default function Header() {
       <div className="flex items-center gap-16">
         <AttioLogo />
         <nav className="hidden gap-4 lg:flex">
-          {navigationItems.map((item, i) => (
-            <Link
-              key={i}
-              href={item.href}
-              className="text-md capitalize text-base-600 transition-colors hover:text-base-400"
-            >
-              {item.label}
-            </Link>
-          ))}
+          <ul className="flex gap-4">
+            {navigationItems.map((item, i) => (
+              <li key={i}>
+                <Link
+                  href={item.href}
+                  className="text-md capitalize text-base-600 transition-colors hover:text-base-400"
+                >
+                  {item.label}
+                </Link>
+              </li>
+            ))}
+          </ul>
         </nav>
       </div>
       <div className="lg:hidden">

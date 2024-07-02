@@ -26,9 +26,7 @@ const FeatureText = ({
       },
     )}
   >
-    <div className="">
-      <Icon />
-    </div>
+    <div>{Icon && <Icon />}</div>
     <button className="group text-start" onClick={onClick}>
       <p className="mb-3 text-lg group-hover:underline">{title}</p>
       <p className="max-w-[15.375rem] text-md group-hover:underline">

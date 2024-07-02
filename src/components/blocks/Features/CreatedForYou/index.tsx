@@ -26,12 +26,7 @@ export default function CreatedForYou() {
           <CarouselContent className="mb-6 ">
             {features.map((feature, i) => (
               <CarouselItem key={i} className="basis-[17rem]">
-                <FeatureCard
-                  title={feature.title}
-                  description={feature.description}
-                  Icon={feature.Icon}
-                  image={feature.image}
-                />
+                <FeatureCard {...feature} />
               </CarouselItem>
             ))}
           </CarouselContent>
