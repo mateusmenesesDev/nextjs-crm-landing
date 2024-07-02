@@ -22,7 +22,12 @@ export default function Hero() {
         </LinkButton>
       </div>
       <div className="flex justify-center">
-        <Image src={heroImage} alt="CRM system image" />
+        <Image
+          priority
+          placeholder="blur"
+          src={heroImage}
+          alt="CRM system image"
+        />
       </div>
     </Container>
   );
