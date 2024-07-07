@@ -17,7 +17,7 @@ export default function FeatureTestimonial({
       <Image src={avatarImage} alt="avatar" className="mb-6" />
       <p className="lg:text-center lg:text-2xl">{text}</p>
       <p className="mt-6 text-base">{name}</p>
-      <p className="pb-10 text-base text-base-400 lg:p-0">{position}</p>
+      <p className="text-base text-base-400 lg:p-0">{position}</p>
     </div>
   );
 }
