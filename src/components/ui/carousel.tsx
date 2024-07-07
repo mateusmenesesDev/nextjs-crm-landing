@@ -255,9 +255,14 @@ CarouselNext.displayName = "CarouselNext";
 type CarouselCounterProps = {
   className?: string;
   itemsLength: number;
+  variant?: "dots" | "circle";
 };
 
-const CarouselCounter = ({ itemsLength, className }: CarouselCounterProps) => {
+const CarouselCounter = ({
+  itemsLength,
+  className,
+  variant = "dots",
+}: CarouselCounterProps) => {
   const { api } = useCarousel();
   const [position, setPosition] = React.useState(1);
 
@@ -276,14 +281,18 @@ const CarouselCounter = ({ itemsLength, className }: CarouselCounterProps) => {
   return (
     <div className={cn("flex justify-center leading-normal", className)}>
       {Array.from({ length: itemsLength }).map((_, index) => (
-        <span
-          key={index}
-          className={cn(
-            "inline-block h-1 w-[1.375rem] rounded-full bg-base-200",
-            index === position - 1 && "bg-base-300",
-            index !== itemsLength - 1 && "mr-2",
-          )}
-        />
+        <div key={index}>
+          <span
+            className={cn(
+              "inline-block h-1 w-[1.375rem] rounded-full bg-dark-500",
+              index === position - 1 && "bg-primary-600",
+              index !== itemsLength - 1 && "mr-2",
+              {
+                "h-[0.5rem] w-[0.5rem]": variant === "circle",
+              },
+            )}
+          />
+        </div>
       ))}
     </div>
   );
