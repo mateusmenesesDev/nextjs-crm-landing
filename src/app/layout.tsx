@@ -17,6 +17,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
+        translate="no"
         className={`${inter.variable} bg-base-100 font-inter text-lg text-base-500 lg:text-xl`}
       >
         <Container>
