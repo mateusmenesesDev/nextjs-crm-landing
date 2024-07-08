@@ -6,6 +6,7 @@ import { inter } from "~/assets/fonts";
 
 import Header from "~/components/blocks/Header";
 import Container from "~/components/ui/Container";
+import Footer from "~/components/blocks/Footer";
 
 export const metadata = {
   title: "Attio CRM",
@@ -29,6 +30,7 @@ export default function RootLayout({
           <Header />
         </Container>
         {children}
+        <Footer />
       </body>
     </html>
   );
