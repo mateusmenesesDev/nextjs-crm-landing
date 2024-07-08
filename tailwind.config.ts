@@ -104,6 +104,9 @@ export default {
         "500": "rgb(var(--color-primary-500) / <alpha-value>)",
         "600": "rgb(var(--color-primary-600) / <alpha-value>)",
       },
+      error: {
+        "100": "rgb(var(--color-error-100) / <alpha-value>)",
+      },
     },
   },
   plugins: [require("tailwindcss-animate")],
