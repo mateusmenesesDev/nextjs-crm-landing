@@ -4,7 +4,7 @@ import ContactUsForm from "./ContactUsForm";
 
 export default function ContactUs() {
   return (
-    <Container className="gap-16 py-6 text-primary-300 lg:flex lg:items-center lg:justify-between lg:py-20">
+    <Container className="gap-16 py-12 text-primary-300 lg:flex lg:items-center lg:justify-between lg:py-28">
       <Heading
         style={1}
         level={2}
