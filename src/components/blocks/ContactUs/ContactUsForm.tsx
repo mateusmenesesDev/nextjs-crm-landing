@@ -36,18 +36,18 @@ export default function ContactUsForm() {
         Subscribe for demo version
       </Heading>
       <label>
-        <span>Name</span>
+        <span className="text-md">Name</span>
         <input
           {...register("name")}
-          className="w-full rounded-md bg-dark-400 px-4 py-1 text-base-100"
+          className="w-full rounded-md border border-base-600 bg-transparent px-4 py-1 text-md text-base-600"
         />
         <ErrorMessage>{errors.name?.message}</ErrorMessage>
       </label>
       <label>
-        <span>Email</span>
+        <span className="text-md">Email</span>
         <input
           {...register("email")}
-          className="w-full rounded-md bg-dark-400 px-4 py-1 text-base-100"
+          className="w-full rounded-md border border-base-600 bg-transparent px-4 py-1 text-md text-base-600"
         />
         <ErrorMessage>{errors.email?.message}</ErrorMessage>
       </label>
